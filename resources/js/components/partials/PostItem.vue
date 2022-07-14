@@ -31,6 +31,7 @@ export default {
 <style scoped lang="scss">
 .my_card{
     border-radius: 20px;
+    max-height: 380px;
 }
 h5{
     text-transform: uppercase;
