@@ -11,7 +11,6 @@ class PageController extends Controller
 {
     public function index(){
         $posts = Post::with('category')->with('tags')->get();
-        $categories = Category::with('posts');
-        return response()->json(compact('posts', 'categories')) ;
+        return response()->json($posts) ;
     }
 }
