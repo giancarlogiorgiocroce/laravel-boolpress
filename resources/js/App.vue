@@ -1,6 +1,11 @@
 <template>
 <div>
     <HeaderComp/>
+
+    <main>
+        <router-view></router-view>
+    </main>
+
     <FooterComp/>
 
     <!-- <h1 class="my_container">
@@ -70,13 +75,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
-h5{
-    text-transform: uppercase;
+main{
+    height: calc(100vh - 200px);
+    background-color: rgb(194, 209, 209);
 }
-ul{
-    list-style: none;
-    .exception{
-        margin-left: -20px;
-    }
-}
+
+// h5{
+//     text-transform: uppercase;
+// }
+// ul{
+//     list-style: none;
+//     .exception{
+//         margin-left: -20px;
+//     }
+// }
 </style>
