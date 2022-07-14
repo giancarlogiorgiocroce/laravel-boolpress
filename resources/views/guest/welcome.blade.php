@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="{{ asset('css/front/style.css') }}">
     </head>
     <body>
-        @if (Route::has('login'))
+
+        {{-- @if (Route::has('login'))
         <div>
             @auth
             <a href="{{ route('admin.index') }}">Admin</a>
@@ -22,8 +23,7 @@
             @endif
             @endauth
         </div>
-        @endif
-
+        @endif --}}
         <div id="app">
 
         </div>

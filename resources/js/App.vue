@@ -1,6 +1,9 @@
 <template>
 <div>
-    <h1 class="my_container">
+    <HeaderComp/>
+    <FooterComp/>
+
+    <!-- <h1 class="my_container">
         Sono una prima pagina custom!
     </h1>
     <div class="container">
@@ -25,13 +28,20 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 </template>
 
 <script>
+import HeaderComp from './components/partials/HeaderComp.vue';
+import FooterComp from './components/partials/FooterComp.vue';
+
 export default {
     name: 'App',
+    components: {
+        HeaderComp,
+        FooterComp
+    },
     data(){
         return{
             apiUrlPosts: 'http://127.0.0.1:8000/api/posts',
